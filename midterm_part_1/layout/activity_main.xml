@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/paymentTextid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="40dp"
+        android:textColor="#616060"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="170dp"
+        android:src="@drawable/credit_card"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="111dp"
+        android:foregroundGravity="center"/>
+
+    <TextView
+        android:id="@+id/subtotalTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal"
+        android:textColor="#B6B5B5"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <TextView
+        android:id="@+id/subtotalAmountTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$160.00"
+        android:textColor="#424040"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <TextView
+        android:id="@+id/discountTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount"
+        android:textColor="#B6B5B5"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+
+    <TextView
+        android:id="@+id/discountAmountTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5%"
+        android:textColor="#424040"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <TextView
+        android:id="@+id/discountAmountTextId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$10.00"
+        android:textColor="#424040"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <TextView
+        android:id="@+id/discountTextId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping"
+        android:textColor="#B6B5B5"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <TextView
+        android:id="@+id/totalAmountTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$162.00"
+        android:textColor="#424040"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <TextView
+        android:id="@+id/totalTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="#B6B5B5"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <Button
+        android:id="@+id/buttonAddCard"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:background="@drawable/dotted"
+        android:textColor="#5b78f2"
+        android:gravity="center"
+        android:padding="50px"
+        android:textAllCaps="false"
+        android:text="Add Card"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="596dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@drawable/gradient"
+        android:textColor="#fff"
+        android:padding="50px"
+        android:textAllCaps="false"
+        android:text="Checkout"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="666dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
